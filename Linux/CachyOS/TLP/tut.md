@@ -1,13 +1,10 @@
-Tentu, Thio! Supaya skrip kamu Universal (bisa jalan di Bash, Zsh, maupun Fish) dan punya instruksi yang jelas, kita akan pakai trik "piping" yang paling aman.
-Berikut adalah README.md profesional yang bisa kamu taruh di repository atau website kamu, lengkap dengan perintah satu baris yang anti-error di shell apa pun.
-------------------------------
 ## 🔋 TLP Portable Switcher by Flessan
 Skrip otomatis untuk mengelola hemat daya di CachyOS / Arch Linux tanpa ribet. Dibuat khusus untuk folder eksperimen ~/Destop.
 ## 🚀 Cara Install & Jalankan (Universal)
 Gunakan perintah di bawah ini. Perintah ini sudah dites dan berjalan di Fish, Bash, maupun Zsh.
 
 ```bash
-curl -s https://flessan.pages.dev/linux/tlp.sh | bash
+curl -s https://flessan.pages.dev/linux/tlp.sh -o tlp.sh && bash tlp.sh && rm tlp.sh
 ```
 
 Kenapa pakai perintah ini? Karena curl | bash adalah cara paling universal yang tidak akan terkena error process substitution di Fish Shell.
